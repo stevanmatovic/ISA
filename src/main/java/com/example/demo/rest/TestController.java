@@ -4,10 +4,11 @@ package com.example.demo.rest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
+@RequestMapping("/velas")
 public class TestController {
 
-    @RequestMapping("/")
+    @GetMapping
     @ResponseBody
     public String velasSitara(){
         return "Velas world!";
